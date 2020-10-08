@@ -4,7 +4,8 @@
   "description": "App support backend related stuffs for tech-attic(frontend)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "push":" git push origin master && git push heroku master"
   },
   "repository": {
     "type": "git",
