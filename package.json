@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "npm run server",
     "server": "nodemon index.js",
     "push": "git push origin main && git push heroku main",
     "push:c": "concurrently --kill-others-on-fail \"git push origin main\" \"git push heroku main\""
