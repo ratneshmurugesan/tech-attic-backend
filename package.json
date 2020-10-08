@@ -1,0 +1,19 @@
+{
+  "name": "tech-attic-backend",
+  "version": "1.0.0",
+  "description": "App support backend related stuffs for tech-attic(frontend)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratneshmurugesan/tech-attic-backend.git"
+  },
+  "author": "Ratnesh Murugesan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratneshmurugesan/tech-attic-backend/issues"
+  },
+  "homepage": "https://github.com/ratneshmurugesan/tech-attic-backend#readme"
+}
