@@ -27,12 +27,9 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.8",
     "path": "^0.12.7",
-    "helmet": "^4.1.1"
-  },
-  "devDependencies": {
+    "helmet": "^4.1.1",
     "cors": "^2.8.5",
     "date-fns": "^2.16.1",
-    "dotenv": "^8.2.0",
     "faker": "^5.1.0",
     "nodemon": "^2.0.6"
   }
