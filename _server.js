@@ -1,13 +1,18 @@
 const app = require("express")();
+require("dotenv").config();
 
+const helmet = require("helmet");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const getFilteredData = require("./filters");
 const summaryRoutes = require("./routes/summary");
 
-const APP_SERVER_PORT = process.env.PORT || 4000;
+const APP_SERVER_PORT = process.env.APP_SERVER_PORT || 4000;
 
+app.use(helmet());
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get("/api/ping", (_, res) => res.status(200).send("pong"));
 

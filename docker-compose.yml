@@ -2,12 +2,12 @@ version: "3.7"
 
 services:
     
-    tech-attic-backend:
-        image: ratneshmurugesan/tech-attic-backend:dev
+    tech-attic-node:
+        image: ratneshmurugesan/tech-attic-node:dev
         build: 
             context: .
             target: dev
-            container_name: tech-attic-backend
+            container_name: tech-attic-node
             restart: always
             volumes: 
                 - .:/app
@@ -15,8 +15,8 @@ services:
                 - "5000:5000"
                 # - "3000:3000"
             # networks:
-            #     -  tech-attic-backend-network
+            #     -  tech-attic-node-network
 
     # networks:
-    #     tech-attic-backend-network:
-    #         name:  tech-attic-backend-network
+    #     tech-attic-node-network:
+    #         name:  tech-attic-node-network
