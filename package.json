@@ -1,31 +1,25 @@
 {
-  "name": "tech-attic-backend",
+  "name": "server",
   "version": "1.0.0",
-  "description": "App support backend related stuffs for tech-attic(frontend)",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "npm run server",
-    "server": "nodemon index.js",
-    "push": "git push origin main && git push heroku main",
-    "push:c": "concurrently --kill-others-on-fail \"git push origin main\" \"git push heroku main\""
+    "start:mock": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ratneshmurugesan/tech-attic-backend.git"
-  },
-  "author": "Ratnesh Murugesan",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ratneshmurugesan/tech-attic-backend/issues"
-  },
-  "homepage": "https://github.com/ratneshmurugesan/tech-attic-backend#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.10.8",
+    "helmet": "^4.1.1",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
+    "faker": "^5.1.0",
+    "nodemon": "^2.0.6"
   }
 }
