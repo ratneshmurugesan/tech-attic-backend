@@ -8,7 +8,7 @@ const cors = require("cors");
 const getFilteredData = require("./filters");
 const summaryRoutes = require("./routes/summary");
 
-const APP_SERVER_PORT = process.env.APP_SERVER_PORT || 4000;
+const APP_SERVER_PORT = process.env.PORT || 4000;
 
 app.use(helmet());
 app.use(bodyParser.json());
