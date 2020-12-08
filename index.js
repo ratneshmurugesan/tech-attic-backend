@@ -9,7 +9,7 @@ const APP_SERVER_PORT = process.env.PORT || 4000;
 
 app.use(bodyParser.json());
 
-app.get("*", (_, res) => res.status(200).send("tech-attic-node"));
+// app.get("*", (_, res) => res.status(200).send("tech-attic-node"));
 
 
 app.get("/api/ping", (_, res) => res.status(200).send("pong"));
