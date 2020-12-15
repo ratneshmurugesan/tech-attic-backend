@@ -18,35 +18,6 @@ const reportFiltersMapping = {
     channels: [1, 2, 3, 4],
     platforms: [1, 2, 3, 4, 5, 6, 7],
   },
-  social: {
-    allowedFilters: [
-      "campaign_subscription",
-      "programs",
-      "keywords",
-      "geo",
-      "regions",
-      "platforms",
-    ],
-    platforms: [1, 2, 3, 4, 5, 6, 7],
-  },
-  search: {
-    allowedFilters: [
-      "campaign_subscription",
-      "programs",
-      "keywords",
-      "geo",
-      "regions",
-      "platforms",
-      "match_type",
-      "brandNonBrand",
-    ],
-    platforms: [1, 6],
-  },
-  dma: {
-    allowedFilters: ["time_aggregate", "channels", "platforms", "dma_regions"],
-    channels: [1, 2],
-    platforms: [1, 3, 6],
-  },
 };
 
 const getFilteredData = (req, res) => {
